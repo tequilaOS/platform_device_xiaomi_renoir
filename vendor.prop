@@ -252,3 +252,7 @@ vendor.usb.use_ffs_mtp=1
 
 # Wifi
 wifi.aware.interface=wifi-aware0
+
+# SoC
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SM7350
