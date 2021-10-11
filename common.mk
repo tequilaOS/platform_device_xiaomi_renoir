@@ -112,6 +112,7 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0.vendor \
     audio.bluetooth.default \
     libbthost_if
 
@@ -232,6 +233,10 @@ PRODUCT_COPY_FILES += \
 # Graphics
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
 
 # Health
 PRODUCT_PACKAGES += \
