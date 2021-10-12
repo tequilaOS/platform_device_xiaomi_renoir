@@ -13,6 +13,12 @@ function blob_fixup() {
         vendor/lib64/hw/camera.qcom.so)
             sed -i "s/\x73\x74\x5F\x6C\x69\x63\x65\x6E\x73\x65\x2E\x6C\x69\x63/\x63\x61\x6D\x65\x72\x61\x5F\x63\x6E\x66\x2E\x74\x78\x74/g" "${2}"
             ;;
+        vendor/lib64/hw/camera.xiaomi.so)
+            "${SIGSCAN}" -p "5e 07 00 94" -P "1F 20 03 D5" -f "${2}"
+            ;;
+        vendor/lib64/vendor.xiaomi.hardware.cameraperf@1.0-impl.so)
+            "${SIGSCAN}" -p "21 00 80 52 7c 00 00 94" -P "21 00 80 52 1F 20 03 D5" -f "${2}"
+            ;;
     esac
 }
 
