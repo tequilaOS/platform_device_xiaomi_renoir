@@ -12,5 +12,9 @@ include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/renoir_QGKI.config
 
+# Partitions
+BOARD_DTBOIMG_PARTITION_SIZE := 25165824
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 114001162240
+
 # Include proprietary files
 include vendor/xiaomi/renoir/BoardConfigVendor.mk
