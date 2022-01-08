@@ -98,7 +98,7 @@ void load_dalvik_properties() {
 
 void vendor_load_properties() {
     std::string region;
-    region = GetProperty("ro.boot.hwc", "GLOBAL");
+    region = GetProperty("ro.boot.hwc", "GL");
 
     std::string model;
     std::string device;
@@ -106,7 +106,7 @@ void vendor_load_properties() {
     std::string description;
     std::string mod_device;
 
-    if (region == "GLOBAL") {
+    if (region == "GL") {
         model = "M2101K9G";
         device = "renoir";
         fingerprint = "Xiaomi/renoir_eea/renoir:11/RKQ1.201112.002/V12.5.6.0.RKIEUXM:user/release-keys";
