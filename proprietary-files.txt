@@ -803,3 +803,11 @@ vendor/lib/libwfduibcsrcinterface_proprietary.so
 vendor/lib/libwfdutils_proprietary.so
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
+
+# Others
+vendor/lib/libasn1cper.so
+vendor/lib/libasn1crtx.so
+vendor/lib/libasn1crt.so
+vendor/lib64/libasn1cper.so
+vendor/lib64/libasn1crtx.so
+vendor/lib64/libasn1crt.so
