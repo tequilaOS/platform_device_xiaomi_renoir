@@ -1,5 +1,9 @@
 type hal_mlipay_hwservice, hwservice_manager_type;
 
+attribute hal_mlipay;
+attribute hal_mlipay_client;
+attribute hal_mlipay_server;
+
 type hal_mlipay_default, domain;
 hal_server_domain(hal_mlipay_default, hal_mlipay)
 
