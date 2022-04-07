@@ -160,6 +160,12 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
+# Diag
+vendor/bin/diag-router
+vendor/lib64/vendor.qti.diaghal@1.0.so
+vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
+vendor/etc/init/vendor.qti.diag.rc
+
 # DPM
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 system/framework/tcmclient.jar
