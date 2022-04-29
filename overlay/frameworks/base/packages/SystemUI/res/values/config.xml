@@ -25,4 +25,18 @@
 
     <!-- Doze: does this device support STATE_DOZE_SUSPEND?  -->
     <bool name="doze_suspend_display_state_supported">false</bool>
+
+    <!--  Location on the screen of the center of the physical power button. This is a reasonable
+    default that should be overridden by device-specific overlays.  -->
+    <dimen name="physical_power_button_center_screen_location_y">1100px</dimen>
+
+     <!-- Location on the screen of the center of the fingerprint sensor. For devices with under
+     display fingerprint sensors, this directly corresponds to the fingerprint sensor's location.
+     For devices with sensors on the back of the device, this corresponds to the location on the
+     screen directly in front of the sensor. -->
+    <dimen name="physical_fingerprint_sensor_center_screen_location_y">@dimen/physical_power_button_center_screen_location_y</dimen>
+
+    <bool name="config_roundedCornerMultipleRadius">true</bool>
+
+    <string name="config_rounded_mask" translatable="false">M 27 0 C 5.3 -0.4 0 5.3 0 27</string>
 </resources>
