@@ -7,14 +7,15 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 -->
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="19dp"
-    android:height="19dp"
-    android:viewportWidth="25"
-    android:viewportHeight="25"
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="180px"
+    android:height="180px"
+    android:viewportWidth="180.0"
+    android:viewportHeight="180.0"
 >
     <path
+        android:pathData="M 0 0 L 137 0 C 30 0 0 30 0 137 L 0 0 Z"
         android:fillColor="#000000"
-        android:pathData="M 0 0 L 27 0 C 5.3 -0.4 0 5.3 0 27 L 0 0 Z"
     />
 </vector>
