@@ -28,35 +28,19 @@ using android::hardware::biometrics::fingerprint::V2_1::implementation::Biometri
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 using android::sp;
-#ifdef USE_EXTENSION
-using vendor::xiaomi::hardware::fingerprintextension::V1_0::IXiaomiFingerprint;
-#endif
 
 int main() {
-    android::sp<IBiometricsFingerprint> biometricsFingerprint = BiometricsFingerprint::getInstance();
-#ifdef USE_EXTENSION
-    android::sp<IXiaomiFingerprint> xiaomiFingerprint = BiometricsFingerprint::getInstance();
-#endif
+    android::sp<IBiometricsFingerprint> bio = BiometricsFingerprint::getInstance();
 
     configureRpcThreadpool(1, true /*callerWillJoin*/);
 
-    if (biometricsFingerprint != nullptr) {
-        if (::android::OK != biometricsFingerprint->registerAsService()) {
+    if (bio != nullptr) {
+        if (::android::OK != bio->registerAsService()) {
             return 1;
         }
     } else {
         ALOGE("Can't create instance of BiometricsFingerprint, nullptr");
     }
-
-#ifdef USE_EXTENSION
-    if (xiaomiFingerprint != nullptr) {
-        if (::android::OK != xiaomiFingerprint->registerAsService()) {
-            return 1;
-        }
-    } else {
-        ALOGE("Can't create instance of XiaomiFingerprint, nullptr");
-    }
-#endif
 
     joinRpcThreadpool();
 

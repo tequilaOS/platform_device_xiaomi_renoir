@@ -4,10 +4,6 @@
     "target_path": "kernel/xiaomi/renoir"
   },
   {
-    "repository": "android_hardware_xiaomi",
-    "target_path": "hardware/xiaomi"
-  },
-  {
     "repository": "android_vendor_qcom_opensource_healthd-ext",
     "target_path": "vendor/qcom/opensource/healthd-ext"
   }

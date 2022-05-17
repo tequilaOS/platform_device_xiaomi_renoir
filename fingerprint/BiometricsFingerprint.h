@@ -20,14 +20,10 @@
 #include <log/log.h>
 #include <android/log.h>
 #include <hardware/hardware.h>
+#include <hardware/fingerprint.h>
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
 #include <android/hardware/biometrics/fingerprint/2.1/IBiometricsFingerprint.h>
-#ifdef USE_EXTENSION
-#include <vendor/xiaomi/hardware/fingerprintextension/1.0/IXiaomiFingerprint.h>
-#endif
-
-#include "hardware/fingerprint.h"
 
 namespace android {
 namespace hardware {
@@ -44,19 +40,14 @@ using ::android::hardware::Void;
 using ::android::hardware::hidl_vec;
 using ::android::hardware::hidl_string;
 using ::android::sp;
-#ifdef USE_EXTENSION
-using ::vendor::xiaomi::hardware::fingerprintextension::V1_0::IXiaomiFingerprint;
 
-struct BiometricsFingerprint : public IBiometricsFingerprint, public IXiaomiFingerprint {
-#else
 struct BiometricsFingerprint : public IBiometricsFingerprint {
-#endif
 public:
     BiometricsFingerprint();
     ~BiometricsFingerprint();
 
     // Method to wrap legacy HAL with BiometricsFingerprint class
-    static BiometricsFingerprint* getInstance();
+    static IBiometricsFingerprint* getInstance();
 
     // Methods from ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint follow.
     Return<uint64_t> setNotify(const sp<IBiometricsFingerprintClientCallback>& clientCallback) override;
@@ -69,11 +60,6 @@ public:
     Return<RequestStatus> remove(uint32_t gid, uint32_t fid) override;
     Return<RequestStatus> setActiveGroup(uint32_t gid, const hidl_string& storePath) override;
     Return<RequestStatus> authenticate(uint64_t operationId, uint32_t gid) override;
-
-#ifdef USE_EXTENSION
-    // Methods from ::vendor::xiaomi::hardware::fingerprintextension::V1_0::IXiaomiFingerprint follow.
-    Return<int32_t> extCmd(int32_t cmd, int32_t param) override;
-#endif
 
 private:
     static fingerprint_device_t* openHal();

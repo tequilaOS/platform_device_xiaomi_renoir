@@ -19,6 +19,7 @@
 #include <hardware/hw_auth_token.h>
 
 #include <hardware/hardware.h>
+#include <hardware/fingerprint.h>
 #include "BiometricsFingerprint.h"
 
 #include <inttypes.h>
@@ -203,13 +204,7 @@ Return<RequestStatus> BiometricsFingerprint::authenticate(uint64_t operationId,
     return ErrorFilter(mDevice->authenticate(mDevice, operationId, gid));
 }
 
-#ifdef USE_EXTENSION
-Return<int32_t> BiometricsFingerprint::extCmd(int32_t cmd, int32_t param) {
-    return mDevice->extCmd(mDevice, cmd, param);
-}
-#endif
-
-BiometricsFingerprint* BiometricsFingerprint::getInstance() {
+IBiometricsFingerprint* BiometricsFingerprint::getInstance() {
     if (!sInstance) {
       sInstance = new BiometricsFingerprint();
     }
