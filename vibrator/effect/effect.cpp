@@ -80,13 +80,16 @@ static struct effect_stream effects[] = {
 
 // Array containing the paths to fifo data in vendor.
 // The position in the array must match the effect id.
+// seq_bin_wav1.bin = STRONG
+// seq_bin_wav4.bin = SOFT
+// seq_bin_wav5.bin = MILD
 static const std::string fifo_data_paths[] = {
+    "/vendor/firmware/seq_bin_wav5.bin",
     "/vendor/firmware/seq_bin_wav1.bin",
-    "/vendor/firmware/seq_bin_wav2.bin",
-    "/vendor/firmware/seq_bin_wav3.bin",
+    "/vendor/firmware/seq_bin_wav4.bin",
     "/vendor/firmware/seq_bin_wav4.bin",
     "/vendor/firmware/seq_bin_wav5.bin",
-    "/vendor/firmware/seq_bin_wav6.bin",
+    "/vendor/firmware/seq_bin_wav5.bin",
 };
 
 // Function to parse custom fifo data from vendor
