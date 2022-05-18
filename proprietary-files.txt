@@ -94,25 +94,23 @@ vendor/lib/libqtigef.so
 vendor/lib/libssrec.so
 
 # Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/libbtnv.so
-vendor/lib64/libsoc_helper.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|9d1ae458fd7288f71ec1ffa97758a31faf023e32
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|fd6562a680f531733a34c97103cd4da08874e594
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|aee31162b5d16ecd03c5ff86c18dcafe3229b0fb
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|dc4fc836969f481ab59988c77fa9fa162900ec8b
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|ad2e0a054d9451d6e14fcf651c02b6a1fae6ce5f
+vendor/lib64/libbtnv.so|7808463b58eb41ec50a0a2b81079229316ec11e3
+vendor/lib64/libsoc_helper.so|30dc6288ae0bdd74a2750dbde4362eb1c3cc1de7
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|949e8e8c6fde83516d9103ae53e87ecd3a8b6eb6
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|dfb5d4ce5e2f8b59b1d74f7661e75327e4187d78
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|9af9b8c5d45b5fb352a2b7f79ef03f2da52b8904
 
 # Bluetooth (A2DP)
-vendor/lib/hw/audio.bluetooth_qti.default.so
-vendor/lib/btaudio_offload_if.so
-vendor/lib/libbluetooth_audio_session_qti.so
-
-# Bluetooth (A2DP) - from odin
+vendor/lib/hw/audio.bluetooth_qti.default.so|65088e5ea8ae9d57b27202f95535f503447c0732
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|487731ce0f11afb09e247f111b10b74c78e20eeb
+vendor/lib/btaudio_offload_if.so|e894fab8bfbb7ab07bc77bc423bcad5ca98caa7e
+vendor/lib/libbluetooth_audio_session_qti.so|10ef0f7a2ec5c25633950533b02be50bedd18ac0
 vendor/lib/libbluetooth_audio_session_qti_2_1.so|885cd3098cbea0467d432b433c84af439425c337
 
 # CAcert
