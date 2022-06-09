@@ -9,13 +9,13 @@ vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
+vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd
-vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # ACDB libraries
 vendor/lib/libacdb-fts.so
@@ -88,22 +88,6 @@ vendor/lib/libssrec.so
 vendor/lib/libvideoNS.so
 
 # Camera
-vendor/etc/camera/xiaomi/dualbokehjpegsnapshot.json
-vendor/etc/camera/xiaomi/dualbokehsnapshot.json
-vendor/etc/camera/xiaomi/frontbokehsnapshot.json
-vendor/etc/camera/xiaomi/frontsinglesnapshot.json
-vendor/etc/camera/xiaomi/frontsupernightsnapshot.json
-vendor/etc/camera/xiaomi/frontsupernightsnapshotjpeg.json
-vendor/etc/camera/xiaomi/manualsnapshot.json
-vendor/etc/camera/xiaomi/miviinfo.json
-vendor/etc/camera/xiaomi/mivisettings.txt
-vendor/etc/camera/xiaomi/normalsnapshot.json
-vendor/etc/camera/xiaomi/rearsupernightsnapshot.json
-vendor/etc/camera/xiaomi/satsnapshot.json
-vendor/etc/camera/xiaomi/superhdsnapshot.json
-vendor/etc/camera/xiaomi/thirdpartydualbokehyuvsnapshot.json
-vendor/etc/camera/xiaomi/thirdpartyjpegsnapshot.json
-vendor/etc/camera/xiaomi/thirdpartysnapshot.json
 vendor/etc/camera/CFR_para_MACRO_V01.bin
 vendor/etc/camera/CFR_para_MACRO_V01_SN.bin
 vendor/etc/camera/CFR_para_UW_V01.bin
@@ -148,8 +132,43 @@ vendor/etc/camera/sr_params.xml
 vendor/etc/camera/superiq_model
 vendor/etc/camera/ubwctp10helper.bin
 vendor/etc/camera/vidhance_calibration
+vendor/etc/camera/xiaomi/dualbokehjpegsnapshot.json
+vendor/etc/camera/xiaomi/dualbokehsnapshot.json
+vendor/etc/camera/xiaomi/frontbokehsnapshot.json
+vendor/etc/camera/xiaomi/frontsinglesnapshot.json
+vendor/etc/camera/xiaomi/frontsupernightsnapshot.json
+vendor/etc/camera/xiaomi/frontsupernightsnapshotjpeg.json
+vendor/etc/camera/xiaomi/manualsnapshot.json
+vendor/etc/camera/xiaomi/miviinfo.json
+vendor/etc/camera/xiaomi/mivisettings.txt
+vendor/etc/camera/xiaomi/normalsnapshot.json
+vendor/etc/camera/xiaomi/rearsupernightsnapshot.json
+vendor/etc/camera/xiaomi/satsnapshot.json
+vendor/etc/camera/xiaomi/superhdsnapshot.json
+vendor/etc/camera/xiaomi/thirdpartydualbokehyuvsnapshot.json
+vendor/etc/camera/xiaomi/thirdpartyjpegsnapshot.json
+vendor/etc/camera/xiaomi/thirdpartysnapshot.json
 vendor/firmware/CAMERA_ICP.elf
 vendor/lib/libcamxexternalformatutils.so
+vendor/lib64/HDR10plus.so
+vendor/lib64/camera/com.qti.actuator.renoir_ofilm_s5kgw3_dw9800_wide.so
+vendor/lib64/camera/com.qti.eeprom.renoir_ofilm_imx355_gt24p64e_ultra_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.renoir_ofilm_s5kgw3_gt24p128e_wide_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.renoir_sunny_s5k3t2_gt24p64_front_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.renoir_sunny_s5k5e9yx04_gt24p64e_macro_eeprom.so
+vendor/lib64/camera/com.qti.sensor.renoir_ofilm_imx355_ultra.so
+vendor/lib64/camera/com.qti.sensor.renoir_ofilm_s5kgw3_wide.so
+vendor/lib64/camera/com.qti.sensor.renoir_sunny_s5k3t2_front.so
+vendor/lib64/camera/com.qti.sensor.renoir_sunny_s5k5e9yx04_macro.so
+vendor/lib64/camera/com.qti.sensormodule.renoir_ofilm_imx355_ultra.bin
+vendor/lib64/camera/com.qti.sensormodule.renoir_ofilm_s5kgw3_wide.bin
+vendor/lib64/camera/com.qti.sensormodule.renoir_sunny_s5k3t2_front.bin
+vendor/lib64/camera/com.qti.sensormodule.renoir_sunny_s5k5e9yx04_macro.bin
+vendor/lib64/camera/com.qti.tuned.default.bin
+vendor/lib64/camera/com.qti.tuned.renoir_ofilm_imx355_ultra.bin
+vendor/lib64/camera/com.qti.tuned.renoir_ofilm_s5kgw3_wide.bin
+vendor/lib64/camera/com.qti.tuned.renoir_sunny_s5k3t2_front.bin
+vendor/lib64/camera/com.qti.tuned.renoir_sunny_s5k5e9yx04_macro.bin
 vendor/lib64/camera/components/com.mi.node.AIIE.so
 vendor/lib64/camera/components/com.mi.node.aiasd.so
 vendor/lib64/camera/components/com.mi.node.bodyslim.so
@@ -224,6 +243,10 @@ vendor/lib64/camera/components/com.xiaomi.node.misegment.so
 vendor/lib64/camera/components/com.xiaomi.node.smooth_transition.so
 vendor/lib64/camera/components/com.xiaomi.node.tracker.so
 vendor/lib64/camera/components/libdepthmapwrapper_secure.so
+vendor/lib64/camera/fdconfigpreview.bin
+vendor/lib64/camera/fdconfigpreviewlite.bin
+vendor/lib64/camera/fdconfigvideo.bin
+vendor/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/camera/plugins/com.qcom.plugin.gpu.so
 vendor/lib64/camera/plugins/com.qcom.plugin.offlinepostproc.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.bodyslim.so
@@ -244,32 +267,6 @@ vendor/lib64/camera/plugins/com.xiaomi.plugin.skinbeautifier.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.sr.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.supermoon.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.supernight.so
-vendor/lib64/camera/com.qti.actuator.renoir_ofilm_s5kgw3_dw9800_wide.so
-vendor/lib64/camera/com.qti.eeprom.renoir_ofilm_imx355_gt24p64e_ultra_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.renoir_ofilm_s5kgw3_gt24p128e_wide_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.renoir_sunny_s5k3t2_gt24p64_front_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.renoir_sunny_s5k5e9yx04_gt24p64e_macro_eeprom.so
-vendor/lib64/camera/com.qti.sensor.renoir_ofilm_imx355_ultra.so
-vendor/lib64/camera/com.qti.sensor.renoir_ofilm_s5kgw3_wide.so
-vendor/lib64/camera/com.qti.sensor.renoir_sunny_s5k3t2_front.so
-vendor/lib64/camera/com.qti.sensor.renoir_sunny_s5k5e9yx04_macro.so
-vendor/lib64/camera/com.qti.sensormodule.renoir_ofilm_imx355_ultra.bin
-vendor/lib64/camera/com.qti.sensormodule.renoir_ofilm_s5kgw3_wide.bin
-vendor/lib64/camera/com.qti.sensormodule.renoir_sunny_s5k3t2_front.bin
-vendor/lib64/camera/com.qti.sensormodule.renoir_sunny_s5k5e9yx04_macro.bin
-vendor/lib64/camera/com.qti.tuned.default.bin
-vendor/lib64/camera/com.qti.tuned.renoir_ofilm_imx355_ultra.bin
-vendor/lib64/camera/com.qti.tuned.renoir_ofilm_s5kgw3_wide.bin
-vendor/lib64/camera/com.qti.tuned.renoir_sunny_s5k3t2_front.bin
-vendor/lib64/camera/com.qti.tuned.renoir_sunny_s5k5e9yx04_macro.bin
-vendor/lib64/camera/fdconfigpreview.bin
-vendor/lib64/camera/fdconfigpreviewlite.bin
-vendor/lib64/camera/fdconfigvideo.bin
-vendor/lib64/camera/fdconfigvideolite.bin
-vendor/lib64/hw/camera.qcom.so
-vendor/lib64/hw/camera.xiaomi.so
-vendor/lib64/hw/com.qti.chi.override.so
-vendor/lib64/HDR10plus.so
 vendor/lib64/com.qti.chiusecaseselector.so
 vendor/lib64/com.qti.feature2.anchorsync.so
 vendor/lib64/com.qti.feature2.demux.so
@@ -307,6 +304,9 @@ vendor/lib64/com.qualcomm.mcx.distortionmapper.so
 vendor/lib64/com.qualcomm.mcx.linearmapper.so
 vendor/lib64/com.qualcomm.mcx.policy.mfl.so
 vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
+vendor/lib64/hw/camera.qcom.so
+vendor/lib64/hw/camera.xiaomi.so
+vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/libAF.so
 vendor/lib64/libBlinkStub.so
 vendor/lib64/libFlickerDet.so
@@ -560,18 +560,18 @@ vendor/firmware/vpu20_4v.mdt
 vendor/firmware/vpu20_4v_unsigned.mbn
 
 # NFC configs
-vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
+vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 
 # Sensors
 vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
+vendor/etc/elliptic_sensor.xml
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
-vendor/etc/elliptic_sensor.xml
 vendor/lib64/libnanopb.so
 vendor/lib64/libnotifyaudiohal.so
 vendor/lib64/libsensorcal.so
