@@ -1,0 +1,11 @@
+[
+  {
+    "repository": "platform_vendor_xiaomi_renoir",
+    "target_path": "vendor/xiaomi/renoir",
+    "remote": "tequila-gitlab"
+  },
+  {
+    "repository": "platform_kernel_xiaomi_renoir",
+    "target_path": "kernel/xiaomi/renoir"
+  }
+]
