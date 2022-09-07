@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "kernel_xiaomi_renoir",
+    "target_path": "kernel/xiaomi/renoir"
+  },
+  {
+    "repository": "android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
+  }
+]
