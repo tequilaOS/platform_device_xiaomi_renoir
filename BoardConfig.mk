@@ -28,6 +28,12 @@ BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 114001162240
 
+# Soong
+SOONG_CONFIG_NAMESPACES += androidBluetoothVars
+SOONG_CONFIG_androidBluetoothVars += \
+    le_disable_read_buffer_size_and_set_host
+SOONG_CONFIG_androidBluetoothVars_le_disable_read_buffer_size_and_set_host ?= true
+
 # Vibrator
 SOONG_CONFIG_xiaomiSm8350Vars_vibrator_use_effect_stream := true
 
