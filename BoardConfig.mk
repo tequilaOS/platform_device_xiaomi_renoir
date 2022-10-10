@@ -28,5 +28,8 @@ BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 114001162240
 
+# Vibrator
+SOONG_CONFIG_xiaomiSm8350Vars_vibrator_use_effect_stream := true
+
 # Include proprietary files
 include vendor/xiaomi/renoir/BoardConfigVendor.mk
