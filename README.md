@@ -19,7 +19,7 @@ Storage | 128 GB, UFS 2.2
 Shipped Android Version | 11
 Battery | Non-removable 4250 mAh
 Display | 2400 x 1080 pixels, 6.55 inches
-Camera  | 64 MP main, 8 MP ultra-wide angle, 5 MP telemacro, 29 MP front
+Camera  | 64 MP main, 8 MP ultra-wide angle, 5 MP telemacro, 20 MP front
 
 ## Device picture
 
